@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="progams">
+      <UniqueIdentifier>{ed7b728c-98c4-4296-8457-88bd06a510cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\sml_assembler.c" />
+    <ClCompile Include="src\sml_filesystem.c" />
+    <ClCompile Include="src\sml_lexer.c" />
+    <ClCompile Include="src\sml_main.c" />
+    <ClCompile Include="src\sml_runtime.c" />
+    <ClCompile Include="src\sml_c64_kernal.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\sml_lexer.h" />
+    <ClInclude Include="src\sml_mnemonics.h" />
+    <ClInclude Include="src\sml_vm.h" />
+    <ClInclude Include="src\sml_6502_public.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\programs\chal_flag_checker.s">
+      <Filter>progams</Filter>
+    </None>
+    <None Include="src\programs\chal_ret2win.s">
+      <Filter>progams</Filter>
+    </None>
+    <None Include="src\programs\debug_test.s">
+      <Filter>progams</Filter>
+    </None>
+    <None Include="src\programs\stacktest.s">
+      <Filter>progams</Filter>
+    </None>
+    <None Include="src\programs\subroutine.s">
+      <Filter>progams</Filter>
+    </None>
+    <None Include="src\programs\test.s">
+      <Filter>progams</Filter>
+    </None>
+    <None Include="src\programs\load_file_test.s">
+      <Filter>progams</Filter>
+    </None>
+    <None Include="src\programs\chal_shellcode.s">
+      <Filter>progams</Filter>
+    </None>
+    <None Include="src\programs\chal_shellcode_payload.s">
+      <Filter>progams</Filter>
+    </None>
+    <None Include="src\programs\load_file_test1.s">
+      <Filter>progams</Filter>
+    </None>
+  </ItemGroup>
+</Project>
