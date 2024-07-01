@@ -50,5 +50,8 @@
     <None Include="src\programs\load_file_test1.s">
       <Filter>progams</Filter>
     </None>
+    <None Include="src\programs\test_zp_indexed_addressing.s">
+      <Filter>progams</Filter>
+    </None>
   </ItemGroup>
 </Project>

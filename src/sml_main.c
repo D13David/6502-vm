@@ -6,7 +6,7 @@
 #define stringify(s) stringify1(s)
 #define stringify1(s) #s
 
-//#define DEBUG_RUN_FROM_CODE 1
+#define DEBUG_RUN_FROM_CODE
 
 #if !TOOLBUILD
 #undef DEBUG_RUN_FROM_CODE
@@ -52,7 +52,7 @@ int main(int argc, const char** argv)
 #else
     assemble_file = 1;
     run = 1;
-    input = "src/programs/chal_ret2win.s";
+    input = "src/programs/test_zp_indexed_addressing.s";
 #endif
     if (input == NULL)
     {

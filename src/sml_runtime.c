@@ -39,8 +39,8 @@ vm_context_t vm_context;
 #define _ADDR_INDX      (read_mem16(fetch8() + vm_context.regs.X))
 #define _ADDR_INDY      (read_mem16(fetch8()) + vm_context.regs.Y)
 #define _ADDR_ZPG       (fetch8())
-#define _ADDR_ZPGX      (fetch8() + vm_context.regs.X)
-#define _ADDR_ZPGY      (fetch8() + vm_context.regs.Y)
+#define _ADDR_ZPGX      ((fetch8() + vm_context.regs.X)&0xff)
+#define _ADDR_ZPGY      ((fetch8() + vm_context.regs.Y)&0xff)
 
 #define _ADDR_R_IMP     (vm_context.regs.AC)
 #define _ADDR_R_IMM     (fetch8())

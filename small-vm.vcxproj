@@ -297,6 +297,7 @@
     <None Include="src\programs\stacktest.s" />
     <None Include="src\programs\subroutine.s" />
     <None Include="src\programs\test.s" />
+    <None Include="src\programs\test_zp_indexed_addressing.s" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
