@@ -247,7 +247,6 @@ void kernal_routines_call()
 {
     switch (vm_context.regs.PC)
     {
-#ifndef IS_PWN_FMTSTR
     case 0xFFB7: /* READST */
         __func_kernal_readst();
         break;
@@ -272,18 +271,15 @@ void kernal_routines_call()
     case 0xFFCC: /* CLRCHN */
         __func_kernal_clrchn();
         break;
-#endif // !IS_PWN_FMTSTR
     case 0xFFCF: /* CHRIN */
         __func_kernal_chrin();
         break;
     case 0xFFD2: /* CHROUT */
         __func_kernal_chrout();
         break;
-#ifndef IS_PWN_FMTSTR
     case 0xFFD5: /* LOAD */
         __func_kernal_load();
         break;
-#endif // !IS_PWN_FMTSTR
     default:
         vm_panic();
     }

@@ -12,27 +12,6 @@
 #undef DEBUG_RUN_FROM_CODE
 #endif
 
-#ifdef IS_PWN_FMTSTR
-void win() {
-    FILE* fp;
-    char ch;
-
-    fp = fopen("flag.txt", "r");
-    if (fp == NULL)
-    {
-        perror("flag.txt not found! If this happened on the server, contact the admin please!");
-        exit(1);
-    }
-    do
-    {
-        ch = fgetc(fp);
-        putchar(ch);
-
-    } while (ch != EOF);
-    fclose(fp);
-}
-#endif
-
 int main(int argc, const char** argv)
 {
     int assemble_file = 0;

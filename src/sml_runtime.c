@@ -709,12 +709,6 @@ void __op_int()
         __builtin_trap();
 #endif
         break;
-#ifdef IS_PWN_FMTSTR
-    case 32:
-        uint16_t address = (vm_context.regs.X << 8) | vm_context.regs.Y;
-        printf((const char* const)&vm_context.memory[address]);
-        break;
-#endif
     default:
         vm_panic();
         break;
